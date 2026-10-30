@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d27">
+
+    <title>Brain Tax | The Internet Is Free. Your Neurons Must Pay.</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND EFFECTS -->
+    <div class="background-effects" aria-hidden="true">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="glow glow-three"></div>
+    </div>
+
+    <!-- TOP NAVIGATION -->
+    <header class="topbar">
+        <a href="#" class="logo" aria-label="NeuronTax home">
+            <span class="logo-icon">🧠</span>
+            <span>NEURON<span class="logo-accent">TAX</span></span>
+        </a>
+
+        <div class="topbar-right">
+            <span class="status-dot"></span>
+            <span class="system-status">TAX DEPARTMENT ONLINE</span>
+        </div>
+    </header>
+
+    <!-- MAIN APPLICATION -->
+    <main class="app-container">
+
+        <!-- INTRODUCTION -->
+        <section id="home-screen" class="screen active">
+            <div class="landing-scene" role="img" aria-label="A satirical Indian female tax officer in a saree and glasses sails a TAXI boat through a glowing futuristic city. She says: Search karna free hai... par tax toh lagega ji!"></div>
+            <div class="landing-water" aria-hidden="true"></div>
+            <div class="landing-particles" aria-hidden="true"></div>
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    ⚡ THE MOST UNNECESSARY SEARCH ENGINE
+                </div>
+
+                <h1>
+                    The internet is free.<br>
+                    <span class="gradient-text">Your neurons must pay.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Every search comes with a price.
+                    Charge your brain, prove you can blink,
+                    survive the questions, and pay your
+                    completely unnecessary brain tax.
+                </p>
+
+                <form id="search-form" class="search-box">
+                    <span class="search-icon" aria-hidden="true">⌕</span>
+
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="What do you want to search?"
+                        autocomplete="off"
+                        required
+                        aria-label="Enter your search query"
+                    >
+
+                    <button type="submit" id="search-button">
+                        Search &amp; Pay →
+                    </button>
+                </form>
+
+                <p class="search-note">
+                    No money will be charged. Your dignity is another matter.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>10</strong>
+                        <span>BLINKS REQUIRED</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>15s</strong>
+                        <span>QUESTION TIMER</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>₹0</strong>
+                        <span>REFUND GUARANTEED? NO.</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- STAGE 2: CHARGE YOUR BRAIN -->
+        <section id="charge-screen" class="screen" hidden>
+            <div class="stage-card">
+
+                <div class="stage-number">STAGE 02 / 10</div>
+
+                <div class="stage-icon">🔋</div>
+
+                <h2>Charge Your Brain</h2>
+
+                <p>
+                    Your neurons are running on 2% battery.
+                    Please pretend to be intelligent.
+                </p>
+
+                <div class="brain-visual" aria-label="Brain charging animation">
+                    <div class="brain-orbit orbit-one"></div>
+                    <div class="brain-orbit orbit-two"></div>
+                    <div class="brain-core">🧠</div>
+                    <div class="brain-spark spark-one">✦</div>
+                    <div class="brain-spark spark-two">✧</div>
+                </div>
+
+                <div class="progress-info">
+                    <span id="charge-status">Preparing your neurons...</span>
+                    <span id="charge-percent">0%</span>
+                </div>
+
+                <div
+                    class="progress-track"
+                    role="progressbar"
+                    aria-label="Brain charging progress"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"
+                    id="charge-progress"
+                >
+                    <div id="charge-progress-fill" class="progress-fill"></div>
+                </div>
+
+                <button id="charge-button" class="primary-button" type="button">
+                    ⚡ Charge Brain
+                </button>
+
+                <p class="small-note">
+                    Warning: Overthinking may attract additional tax.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- STAGE 3: REAL-TIME BLINK CHALLENGE -->
+        <section id="blink-screen" class="screen" hidden>
+            <div class="stage-card">
+
+                <div class="stage-number">STAGE 03 / 10</div>
+
+                <div class="stage-icon">👁️</div>
+
+                <h2>The Blink Tax</h2>
+
+                <p>
+                    The department requires proof that you are
+                    a functioning human being.
+                </p>
+
+                <div class="camera-frame">
+                    <video
+                        id="blink-video"
+                        autoplay
+                        muted
+                        playsinline
+                        aria-label="Live camera preview for blink detection"
+                    ></video>
+
+                    <div class="camera-overlay" aria-hidden="true">
+                        <div class="face-guide"></div>
+                        <span class="camera-label">LIVE NEURON SURVEILLANCE</span>
+                    </div>
+
+                    <div id="blink-camera-placeholder" class="camera-placeholder">
+                        <span>📷</span>
+                        <p>Your camera preview will appear here.</p>
+                    </div>
+                </div>
+
+                <div class="blink-counter">
+                    <div>
+                        <span class="counter-label">BLINKS DETECTED</span>
+                        <div class="counter-number">
+                            <span id="blink-count">0</span>
+                            <span class="counter-total">/ 10</span>
+                        </div>
+                    </div>
+
+                    <div id="blink-status" class="status-pill">
+                        CAMERA NOT STARTED
+                    </div>
+                </div>
+
+                <div class="progress-track">
+                    <div id="blink-progress-fill" class="progress-fill"></div>
+                </div>
+
+                <button id="start-blink-button" class="primary-button" type="button">
+                    📷 Start Blink Test
+                </button>
+
+                <p class="small-note">
+                    Ten actual detected blink cycles are required.
+                    Waiting for time to pass will not count.
+                </p>
+
+                <p id="blink-error" class="error-message" role="alert"></p>
+
+            </div>
+        </section>
+
+
+        <!-- STAGE 4: COUNTDOWN -->
+        <section id="countdown-screen" class="screen" hidden>
+            <div class="stage-card countdown-card">
+
+                <div class="stage-number">STAGE 04 / 10</div>
+
+                <div class="stage-icon">⏳</div>
+
+                <h2>Prepare for Intellectual Damage</h2>
+
+                <p id="countdown-message">
+                    TAXI is preparing your extremely important assessment.
+                </p>
+
+                <div id="countdown-number" class="countdown-number">10</div>
+
+                <p id="countdown-status" class="small-note">
+                    Please remain unnecessarily confident.
+                </p>
+
+                <button id="countdown-start-button" class="primary-button" type="button">
+                    Start Countdown
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- STAGE 5: INTENTIONALLY FAKE QUESTION PRANK -->
+        <section id="fake-question-screen" class="screen" hidden>
+            <div class="stage-card prank-card">
+
+                <div class="stage-number">STAGE 05 / 10</div>
+
+                <div class="prank-badge">⚠️ OFFICIAL QUESTION DEPARTMENT</div>
+
+                <div class="stage-icon">📄</div>
+
+                <h2>Very Important Question</h2>
+
+                <p class="prank-subtitle">
+                    Your intelligence is about to be evaluated.
+                </p>
+
+                <div class="fake-question-box">
+                    <div class="fake-question-label">
+                        QUESTION PAPER
+                    </div>
+
+                    <h3>Answer this question in 15 seconds.</h3>
+
+                    <p>
+                        Please make a decision before the economy collapses.
+                    </p>
+
+                    <!-- INTENTIONALLY NO ACTUAL QUESTION OR OPTIONS -->
+
+                    <div class="fake-question-empty">
+                        <span class="empty-icon">∅</span>
+                        <span>Question not found.</span>
+                        <span>Maybe it took a tea break.</span>
+                    </div>
+                </div>
+
+                <div class="timer-row">
+                    <span>TIME REMAINING</span>
+                    <span id="fake-question-timer" class="timer-value">15</span>
+                </div>
+
+                <div class="progress-track">
+                    <div id="fake-question-progress" class="progress-fill"></div>
+                </div>
+
+                <div id="fake-question-feedback" class="feedback-message" aria-live="polite">
+                    The question is missing. The deadline is not.
+                </div>
+
+                <div class="taxi-message" id="fake-taxi-message" aria-live="polite">
+                    <span class="taxi-mini-avatar">🚤</span>
+                    <div>
+                        <strong>TAXI SAYS</strong>
+                        <p>
+                            Where is the question? Where is the riddle?
+                            Don't ask me. I'm just the tax department!
+                        </p>
+                    </div>
+                </div>
+
+                <button id="fake-question-next-button" class="primary-button" type="button" hidden>
+                    Continue to CAPTCHA →
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- TAXI SIDE ASSISTANT -->
+        <aside id="taxi-assistant" class="taxi-assistant" aria-label="TAXI assistant">
+
+            <div class="taxi-speech" id="taxi-speech" aria-live="polite">
+                I can't let that brain be drowsy.
+            </div>
+
+            <button
+                type="button"
+                id="taxi-avatar-button"
+                class="taxi-avatar-button"
+                aria-label="Ask TAXI to speak"
+                title="Talk to TAXI"
+            >
+                <span class="taxi-avatar" id="taxi-avatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 280" class="taxi-illustration" aria-hidden="true">
+<defs>
+ <linearGradient id="saree" x2="1" y2="1"><stop stop-color="#a88aff"/><stop offset="1" stop-color="#5938ab"/></linearGradient>
+ <linearGradient id="hull" x2="0" y2="1"><stop stop-color="#385bba"/><stop offset="1" stop-color="#111e4e"/></linearGradient>
+</defs>
+<ellipse cx="152" cy="260" rx="113" ry="9" fill="#438cff" opacity=".15"/>
+<g class="taxi-boat">
+ <!-- An original fictional minister of unnecessary taxation. -->
+ <path d="M96 188 Q97 127 142 124 Q191 121 208 187" fill="url(#saree)" stroke="#251a48" stroke-width="3"/>
+ <path d="M106 139 Q126 154 188 181 L206 185 L183 132 L167 127 Z" fill="#244c99"/>
+ <path d="M104 139 Q136 170 199 185 M112 135 Q144 164 200 179" fill="none" stroke="#e6c374" stroke-width="4"/>
+ <path d="M147 121 L147 138 Q160 147 170 133 L169 115" fill="#be805d"/>
+ <path d="M114 81 Q94 50 114 31 Q146 9 180 28 Q207 39 196 84 L189 117 L118 112 Z" fill="#292939" stroke="#131b35" stroke-width="3"/>
+ <circle cx="199" cy="62" r="21" fill="#333345"/><path d="M188 45 Q201 42 209 52" fill="none" stroke="#a1a4bb" stroke-width="3"/>
+ <ellipse cx="116" cy="89" rx="8" ry="12" fill="#d79c74"/><ellipse cx="189" cy="89" rx="8" ry="12" fill="#d79c74"/>
+ <path d="M119 61 Q148 63 168 42 Q190 55 187 87 Q188 123 158 131 Q126 125 119 97 Z" fill="#e4ab81" stroke="#9c604c" stroke-width="2"/>
+ <path d="M120 60 Q142 57 168 40 M128 40 Q146 29 165 30" fill="none" stroke="#a3a1af" stroke-width="4"/>
+ <circle cx="157" cy="65" r="3.7" fill="#a52e60"/>
+ <g class="taxi-brows" fill="none" stroke="#43303a" stroke-width="3" stroke-linecap="round"><path class="brow-left" d="M127 73 Q136 68 144 73"/><path class="brow-right" d="M165 73 Q174 68 181 73"/></g>
+ <g class="taxi-eyes" fill="#292439"><ellipse cx="137" cy="85" rx="3.4" ry="4.7"/><ellipse cx="174" cy="85" rx="3.4" ry="4.7"/></g>
+ <g fill="#89ccff" fill-opacity=".13" stroke="#26365b" stroke-width="3"><rect x="121" y="76" width="29" height="23" rx="7"/><rect x="161" y="76" width="29" height="23" rx="7"/><path d="M150 82 Q155 78 161 82 M115 79 L121 82" fill="none"/></g>
+ <path d="M154 85 L151 101 L158 102" fill="none" stroke="#b57657" stroke-width="2" stroke-linecap="round"/>
+ <path class="taxi-mouth mouth-smile" d="M144 111 Q156 123 169 109 Q157 115 144 111" fill="#843950"/>
+ <ellipse class="taxi-mouth mouth-open" cx="156" cy="114" rx="10" ry="8" fill="#663045"/>
+ <path class="taxi-mouth mouth-laugh" d="M141 107 Q155 114 172 106 Q167 132 151 124 Q144 120 141 107" fill="#663045"/><path class="taxi-mouth mouth-laugh" d="M144 109 Q157 115 170 108 L167 115 L148 116 Z" fill="#fff2dc"/>
+ <path class="taxi-mouth mouth-frown" d="M143 117 Q157 106 170 116" fill="none" stroke="#843950" stroke-width="3" stroke-linecap="round"/>
+ <g fill="#f1cb73"><circle cx="117" cy="103" r="4"/><circle cx="190" cy="103" r="4"/><path d="M139 136 Q153 158 176 137 L174 142 Q155 165 138 140 Z"/></g>
+ <path d="M104 154 Q84 175 103 187 L136 181" fill="none" stroke="#d69a72" stroke-width="14" stroke-linecap="round"/>
+ <g transform="rotate(-12 174 166)"><rect x="153" y="144" width="49" height="46" rx="4" fill="#efbd73" stroke="#a97948" stroke-width="2"/><text x="178" y="162" text-anchor="middle" font-size="9" font-family="sans-serif" font-weight="bold" fill="#493155">BUDGET</text><path d="M164 171 H191 M164 177 H184" stroke="#a97948" stroke-width="2"/></g>
+ <path d="M199 157 Q214 177 193 181" fill="none" stroke="#d69a72" stroke-width="12" stroke-linecap="round"/>
+ <path d="M28 192 Q150 206 273 185 L251 226 Q159 264 58 230 Z" fill="url(#hull)" stroke="#70b5ff" stroke-width="3"/>
+ <path d="M30 193 Q149 217 271 187" fill="none" stroke="#b3a0ff" stroke-width="7"/>
+ <path d="M67 226 Q150 249 244 223" fill="none" stroke="#8277df" stroke-width="2"/>
+ <text x="155" y="232" text-anchor="middle" fill="#dcecff" font-family="sans-serif" font-weight="bold" font-size="13" letter-spacing="3">S.S. TAXI</text>
+ <g transform="rotate(-28 75 197)"><path d="M70 157 V241" stroke="#d5b57e" stroke-width="6" stroke-linecap="round"/><path d="M61 219 Q70 211 79 219 L80 246 Q70 259 60 246 Z" fill="#8b73d7" stroke="#cfbeff" stroke-width="2"/></g>
+</g>
+<g class="taxi-ripples" fill="none" stroke="#58caff" stroke-width="2" stroke-linecap="round" opacity=".7"><path d="M28 252 Q52 257 78 252 M222 251 Q248 258 275 251 M102 270 Q152 275 201 269"/></g>
+</svg></span>
+                <span class="taxi-avatar-status"></span>
+            </button>
+
+            <div class="taxi-assistant-info">
+                <strong>TAXI</strong>
+                <span>Minister of unnecessary fees · Parody</span>
+            </div>
+
+            <div class="taxi-controls">
+                <button type="button" id="taxi-repeat-button" title="Repeat dialogue">
+                    🔊 Repeat
+                </button>
+
+                <button
+                    type="button"
+                    id="taxi-sound-button"
+                    aria-pressed="true"
+                    title="Toggle voice"
+                >
+                    🔈 Sound on
+                </button>
+            </div>
+
+            <!-- Optional future portrait slot.
+                 Add an image only when one is selected.
+                 Keep it a clearly labelled parody/illustration. -->
+            <div id="taxi-portrait-slot" hidden>
+                <img
+                    id="taxi-portrait"
+                    src=""
+                    alt="Satirical tax officer character"
+                >
+            </div>
+
+        </aside>
+
+
+        <!-- STAGE 6: NUMERIC-ONLY CAPTCHA -->
+        <section id="captcha-screen" class="screen" hidden>
+            <div class="stage-card">
+
+                <div class="stage-number">STAGE 06 / 10</div>
+
+                <div class="stage-icon">🔐</div>
+
+                <h2>Prove You Are Not a Robot</h2>
+
+                <p>
+                    This code contains letters and numbers.
+                    Type <strong>only the digits</strong>, in the same order.
+                </p>
+
+                <div class="captcha-display-wrap">
+                    <div
+                        id="captcha-code"
+                        class="captcha-code"
+                        aria-label="CAPTCHA code"
+                    >
+                        A7K3P9B2
+                    </div>
+
+                    <button
+                        type="button"
+                        id="captcha-refresh-button"
+                        class="icon-button"
+                        aria-label="Generate a new CAPTCHA"
+                        title="Refresh CAPTCHA"
+                    >
+                        ↻
+                    </button>
+                </div>
+
+                <p class="captcha-example">
+                    Example: <code>A7K3P9B2</code> → type <code>7392</code>
+                </p>
+
+                <form id="captcha-form">
+                    <label for="captcha-input">Enter the digits only</label>
+
+                    <input
+                        type="text"
+                        id="captcha-input"
+                        inputmode="numeric"
+                        pattern="[0-9]*"
+                        autocomplete="off"
+                        maxlength="12"
+                        placeholder="Enter numbers only"
+                        required
+                    >
+
+                    <p id="captcha-feedback" class="feedback-message" aria-live="polite"></p>
+
+                    <button type="submit" class="primary-button">
+                        Verify &amp; Continue →
+                    </button>
+                </form>
+
+                <p class="small-note">
+                    Wrong answer? The same CAPTCHA stays until you get it right
+                    or choose to refresh it.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- STAGE 7: REAL QUESTION ROUND -->
+        <section id="real-question-screen" class="screen" hidden>
+            <div class="stage-card question-card">
+
+                <div class="stage-number">STAGE 07 / 10</div>
+
+                <div class="stage-icon">🧩</div>
+
+                <h2>The Actual Brain Test</h2>
+
+                <p>
+                    Congratulations. The department has finally found
+                    its question paper.
+                </p>
+
+                <!-- 10-SECOND PREPARATION BEFORE EACH QUESTION -->
+                <div id="question-prep-panel" class="question-prep-panel">
+                    <div class="prep-badge">QUESTION INCOMING</div>
+
+                    <h3>Prepare your neurons.</h3>
+
+                    <p>
+                        Your real question will appear when this countdown ends.
+                    </p>
+
+                    <div id="question-prep-countdown" class="prep-countdown">10</div>
+
+                    <div class="progress-track">
+                        <div
+                            id="question-prep-progress"
+                            class="progress-fill"
+                        ></div>
+                    </div>
+
+                    <p id="question-prep-message" class="small-note">
+                        Do not panic. Panic is taxable.
+                    </p>
+                </div>
+
+                <!-- ACTUAL QUESTION AREA: HIDDEN UNTIL PREP COUNTDOWN FINISHES -->
+                <div id="real-question-content" hidden>
+
+                    <div class="question-meta">
+                        <span id="question-number">QUESTION 1 / 3</span>
+                        <span id="question-category" class="category-badge">
+                            RIDDLE
+                        </span>
+                    </div>
+
+                    <div class="timer-row">
+                        <span>TIME REMAINING</span>
+                        <span id="real-question-timer" class="timer-value">15</span>
+                    </div>
+
+                    <div class="progress-track">
+                        <div
+                            id="real-question-progress"
+                            class="progress-fill"
+                        ></div>
+                    </div>
+
+                    <h3 id="real-question-text" class="real-question-text">
+                        Your real question will appear here.
+                    </h3>
+
+                    <div
+                        id="real-question-options"
+                        class="question-options"
+                        role="group"
+                        aria-label="Answer options"
+                    >
+                        <!-- JavaScript inserts four answer buttons here -->
+                    </div>
+
+                    <div
+                        id="real-question-feedback"
+                        class="feedback-message"
+                        aria-live="polite"
+                    ></div>
+
+                    <button
+                        id="real-question-next-button"
+                        class="primary-button"
+                        type="button"
+                        hidden
+                    >
+                        Next Question →
+                    </button>
+
+                </div>
+
+                <p class="small-note">
+                    Three question slots per round. Each real question gets
+                    its own 10-second preparation countdown followed by
+                    a 15-second answer timer.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- STAGE 8: TAX WHEEL -->
+        <section id="tax-wheel-screen" class="screen" hidden>
+            <div class="stage-card">
+
+                <div class="stage-number">STAGE 08 / 10</div>
+
+                <div class="stage-icon">🎡</div>
+
+                <h2>The Wheel of Unnecessary Taxes</h2>
+
+                <p>
+                    You have worked hard. The department would like
+                    to reward you with a new financial problem.
+                </p>
+
+                <div class="wheel-container">
+
+                    <div class="wheel-pointer" aria-hidden="true">▼</div>
+
+                    <div id="tax-wheel" class="tax-wheel" role="img" aria-label="Tax wheel">
+                        <div class="wheel-center">TAX</div>
+                    </div>
+
+                </div>
+
+                <button id="spin-wheel-button" class="primary-button" type="button">
+                    🎡 Spin the Tax Wheel
+                </button>
+
+                <div id="tax-wheel-result" class="tax-wheel-result" aria-live="polite">
+                    Your financial suffering awaits.
+                </div>
+
+                <button id="tax-wheel-next-button" class="primary-button" type="button" hidden>
+                    Proceed to Nose Scan →
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- STAGE 9: LIVE NOSE SCAN -->
+        <section id="nose-scan-screen" class="screen" hidden>
+            <div class="stage-card">
+
+                <div class="stage-number">STAGE 09 / 10</div>
+
+                <div class="stage-icon">👃</div>
+
+                <h2>Advanced Nose Tax Scan</h2>
+
+                <p>
+                    Our completely unnecessary department is
+                    checking your nose for suspicious levels of confidence.
+                </p>
+
+                <div class="camera-frame nose-camera-frame">
+
+                    <video
+                        id="nose-video"
+                        autoplay
+                        muted
+                        playsinline
+                        aria-label="Live camera preview for theatrical nose scan"
+                    ></video>
+
+                    <div class="nose-scan-overlay" aria-hidden="true">
+                        <div class="nose-scan-line"></div>
+                        <div id="nose-marker" class="nose-marker">+</div>
+                        <div class="scan-corner corner-top-left"></div>
+                        <div class="scan-corner corner-top-right"></div>
+                        <div class="scan-corner corner-bottom-left"></div>
+                        <div class="scan-corner corner-bottom-right"></div>
+                    </div>
+
+                    <div id="nose-camera-placeholder" class="camera-placeholder">
+                        <span>🔎</span>
+                        <p>Camera preview will appear here.</p>
+                    </div>
+
+                </div>
+
+                <div class="scan-status-row">
+                    <span>SCAN STATUS</span>
+                    <span id="nose-scan-status">AWAITING INITIALIZATION</span>
+                </div>
+
+                <div class="progress-track">
+                    <div id="nose-scan-progress" class="progress-fill"></div>
+                </div>
+
+                <p id="nose-scan-message" class="small-note">
+                    This is a theatrical effect, not a real medical,
+                    identity, or intelligence assessment.
+                </p>
+
+                <button id="start-nose-scan-button" class="primary-button" type="button">
+                    🔎 Begin Nose Scan
+                </button>
+
+                <button id="skip-nose-scan-button" class="secondary-button" type="button">
+                    Skip Camera &amp; Continue
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- STAGE 10: FINAL BETRAYAL -->
+        <section id="final-screen" class="screen" hidden>
+            <div class="stage-card final-card">
+
+                <div class="stage-number">STAGE 10 / 10</div>
+
+                <div class="final-icon">💸</div>
+
+                <div class="final-badge">ASSESSMENT COMPLETED</div>
+
+                <h2>Congratulations.</h2>
+
+                <h3 class="gradient-text">You have been financially inconvenienced.</h3>
+
+                <p id="final-intro">
+                    The department has reviewed your case.
+                    The department has also reviewed your patience.
+                </p>
+
+                <div class="final-query-box">
+                    <span>YOUR ORIGINAL SEARCH</span>
+                    <strong id="final-search-query">No search query recorded</strong>
+                </div>
+
+                <div class="score-grid">
+
+                    <div class="score-item">
+                        <span>Correct Answers</span>
+                        <strong id="final-correct-count">0</strong>
+                    </div>
+
+                    <div class="score-item">
+                        <span>Incorrect Answers</span>
+                        <strong id="final-incorrect-count">0</strong>
+                    </div>
+
+                    <div class="score-item">
+                        <span>Timed Out</span>
+                        <strong id="final-timeout-count">0</strong>
+                    </div>
+
+                    <div class="score-item">
+                        <span>Missing Questions</span>
+                        <strong id="final-prank-count">0</strong>
+                    </div>
+
+                </div>
+
+                <div class="final-tax-box">
+                    <span>YOUR TAX WHEEL RESULT</span>
+                    <strong id="final-tax-result">Pending department approval</strong>
+                </div>
+
+                <div class="final-roast-box">
+                    <span>OFFICIAL FINAL ROAST</span>
+                    <p id="final-roast">
+                        Your brain has been assessed.
+                        Your refund has been postponed indefinitely.
+                    </p>
+                </div>
+
+                <div class="taxi-message final-taxi-message">
+                    <span class="taxi-mini-avatar">🧾</span>
+                    <div>
+                        <strong>TAXI'S FINAL WORD</strong>
+                        <p id="final-taxi-message">
+                            Please understand... your brain cells are a
+                            limited resource. Every unnecessary thought
+                            comes with a tax!
+                        </p>
+                    </div>
+                </div>
+
+                <button id="restart-button" class="primary-button" type="button">
+                    ↻ Start a New Search
+                </button>
+
+                <p class="small-note">
+                    This is a satirical demo. No actual tax is collected
+                    and no search service is implied unless connected.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+        <p>© 2026 BRAIN TAX</p>
+        <p>Because good ideas are overrated.</p>
+        <p class="footer-disclaimer">
+            Satire only · No real taxes · No actual intelligence assessment
+        </p>
+    </footer>
+
+
+    <!-- CAMERA / QUESTION / COUNTDOWN LOGIC -->
+    <script src="script.js"></script>
+
+</body>
+</html>

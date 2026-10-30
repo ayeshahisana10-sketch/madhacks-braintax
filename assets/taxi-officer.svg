@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 280" class="taxi-illustration" role="img" aria-label="TAXI, a fictional saree-wearing tax minister in a boat">
+<style>.taxi-mouth { display: none; } .mouth-smile { display: block; }</style>
+<defs>
+ <linearGradient id="saree" x2="1" y2="1"><stop stop-color="#a88aff"/><stop offset="1" stop-color="#5938ab"/></linearGradient>
+ <linearGradient id="hull" x2="0" y2="1"><stop stop-color="#385bba"/><stop offset="1" stop-color="#111e4e"/></linearGradient>
+</defs>
+<ellipse cx="152" cy="260" rx="113" ry="9" fill="#438cff" opacity=".15"/>
+<g class="taxi-boat">
+ <!-- An original fictional minister of unnecessary taxation. -->
+ <path d="M96 188 Q97 127 142 124 Q191 121 208 187" fill="url(#saree)" stroke="#251a48" stroke-width="3"/>
+ <path d="M106 139 Q126 154 188 181 L206 185 L183 132 L167 127 Z" fill="#244c99"/>
+ <path d="M104 139 Q136 170 199 185 M112 135 Q144 164 200 179" fill="none" stroke="#e6c374" stroke-width="4"/>
+ <path d="M147 121 L147 138 Q160 147 170 133 L169 115" fill="#be805d"/>
+ <path d="M114 81 Q94 50 114 31 Q146 9 180 28 Q207 39 196 84 L189 117 L118 112 Z" fill="#292939" stroke="#131b35" stroke-width="3"/>
+ <circle cx="199" cy="62" r="21" fill="#333345"/><path d="M188 45 Q201 42 209 52" fill="none" stroke="#a1a4bb" stroke-width="3"/>
+ <ellipse cx="116" cy="89" rx="8" ry="12" fill="#d79c74"/><ellipse cx="189" cy="89" rx="8" ry="12" fill="#d79c74"/>
+ <path d="M119 61 Q148 63 168 42 Q190 55 187 87 Q188 123 158 131 Q126 125 119 97 Z" fill="#e4ab81" stroke="#9c604c" stroke-width="2"/>
+ <path d="M120 60 Q142 57 168 40 M128 40 Q146 29 165 30" fill="none" stroke="#a3a1af" stroke-width="4"/>
+ <circle cx="157" cy="65" r="3.7" fill="#a52e60"/>
+ <g class="taxi-brows" fill="none" stroke="#43303a" stroke-width="3" stroke-linecap="round"><path class="brow-left" d="M127 73 Q136 68 144 73"/><path class="brow-right" d="M165 73 Q174 68 181 73"/></g>
+ <g class="taxi-eyes" fill="#292439"><ellipse cx="137" cy="85" rx="3.4" ry="4.7"/><ellipse cx="174" cy="85" rx="3.4" ry="4.7"/></g>
+ <g fill="#89ccff" fill-opacity=".13" stroke="#26365b" stroke-width="3"><rect x="121" y="76" width="29" height="23" rx="7"/><rect x="161" y="76" width="29" height="23" rx="7"/><path d="M150 82 Q155 78 161 82 M115 79 L121 82" fill="none"/></g>
+ <path d="M154 85 L151 101 L158 102" fill="none" stroke="#b57657" stroke-width="2" stroke-linecap="round"/>
+ <path class="taxi-mouth mouth-smile" d="M144 111 Q156 123 169 109 Q157 115 144 111" fill="#843950"/>
+ <ellipse class="taxi-mouth mouth-open" cx="156" cy="114" rx="10" ry="8" fill="#663045"/>
+ <path class="taxi-mouth mouth-laugh" d="M141 107 Q155 114 172 106 Q167 132 151 124 Q144 120 141 107" fill="#663045"/><path class="taxi-mouth mouth-laugh" d="M144 109 Q157 115 170 108 L167 115 L148 116 Z" fill="#fff2dc"/>
+ <path class="taxi-mouth mouth-frown" d="M143 117 Q157 106 170 116" fill="none" stroke="#843950" stroke-width="3" stroke-linecap="round"/>
+ <g fill="#f1cb73"><circle cx="117" cy="103" r="4"/><circle cx="190" cy="103" r="4"/><path d="M139 136 Q153 158 176 137 L174 142 Q155 165 138 140 Z"/></g>
+ <path d="M104 154 Q84 175 103 187 L136 181" fill="none" stroke="#d69a72" stroke-width="14" stroke-linecap="round"/>
+ <g transform="rotate(-12 174 166)"><rect x="153" y="144" width="49" height="46" rx="4" fill="#efbd73" stroke="#a97948" stroke-width="2"/><text x="178" y="162" text-anchor="middle" font-size="9" font-family="sans-serif" font-weight="bold" fill="#493155">BUDGET</text><path d="M164 171 H191 M164 177 H184" stroke="#a97948" stroke-width="2"/></g>
+ <path d="M199 157 Q214 177 193 181" fill="none" stroke="#d69a72" stroke-width="12" stroke-linecap="round"/>
+ <path d="M28 192 Q150 206 273 185 L251 226 Q159 264 58 230 Z" fill="url(#hull)" stroke="#70b5ff" stroke-width="3"/>
+ <path d="M30 193 Q149 217 271 187" fill="none" stroke="#b3a0ff" stroke-width="7"/>
+ <path d="M67 226 Q150 249 244 223" fill="none" stroke="#8277df" stroke-width="2"/>
+ <text x="155" y="232" text-anchor="middle" fill="#dcecff" font-family="sans-serif" font-weight="bold" font-size="13" letter-spacing="3">S.S. TAXI</text>
+ <g transform="rotate(-28 75 197)"><path d="M70 157 V241" stroke="#d5b57e" stroke-width="6" stroke-linecap="round"/><path d="M61 219 Q70 211 79 219 L80 246 Q70 259 60 246 Z" fill="#8b73d7" stroke="#cfbeff" stroke-width="2"/></g>
+</g>
+<g class="taxi-ripples" fill="none" stroke="#58caff" stroke-width="2" stroke-linecap="round" opacity=".7"><path d="M28 252 Q52 257 78 252 M222 251 Q248 258 275 251 M102 270 Q152 275 201 269"/></g>
+</svg>
